@@ -1,0 +1,306 @@
+/* Reset & Font Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 24px 16px;
+    line-height: 1.6;
+}
+
+/* Header & Navbar */
+.navbar {
+    max-width: 840px;
+    margin: 0 auto 20px auto;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #0d9488;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 840px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 36px 40px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text .sub-title {
+    display: inline-block;
+    color: #94a3b8;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #0f172a;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    color: #334155;
+}
+
+.hero-text p span {
+    color: #0d9488;
+    font-weight: 600;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    background-color: #f1f5f9;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+/* Container Card Materi */
+.materi-container {
+    max-width: 840px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.materi-judul-utama {
+    color: #0f172a;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.materi-card {
+    background: #ffffff;
+    padding: 28px 32px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.04);
+    border: 1px solid #f1f5f9;
+}
+
+.materi-card h3 {
+    color: #0d9488;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.materi-card h4 {
+    margin: 18px 0 8px 0;
+    color: #0f172a;
+    font-size: 16px;
+}
+
+.materi-card p {
+    color: #334155;
+    margin-bottom: 12px;
+}
+
+.materi-card code {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+}
+
+.materi-card ul, 
+.materi-card ol {
+    padding-left: 24px;
+    color: #334155;
+}
+
+.card-img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+/* Tabel Responsive */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.materi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.materi-table th {
+    background-color: #0d9488;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.materi-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+}
+
+/* Form Styling */
+.materi-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #334155;
+    font-size: 15px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #0f172a;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.btn-submit {
+    align-self: flex-start;
+    background-color: #0d9488;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #0f766e;
+}
+
+/* Button Link Modul */
+.materi-link-btn {
+    display: inline-block;
+    background-color: #0d9488;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+.materi-link-btn:hover {
+    background-color: #0f766e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 32px 16px 16px 16px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Responsif Layar HP / Mobile */
+@media (max-width: 650px) {
+    body {
+        padding: 16px 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 28px 20px;
+        gap: 20px;
+    }
+
+    .hero-image img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .materi-card {
+        padding: 20px 18px;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+}
